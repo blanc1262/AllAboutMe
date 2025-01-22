@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Myself</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        nav a:hover {
+            color: #23527c;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        article {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px auto; 
+            width: 80%; 
+            max-width: 900px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            min-height: 250px; 
+    }
+
+        h1, h2 {
+            color: #337ab7;
+        }
+        figure {
+            margin: 20px;
+            text-align: center;
+        }
+        img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        figcaption {
+            font-size: 18px;
+            color: #337ab7;
+        }
+        footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
     <header id="top">
-        <h1 style="text-align: center; color: navy;">All About Me</h1>
+        <h1 style="text-align: center; color: #337ab7; font-family: 'Georgia', serif; font-size: 35px;">ALL ABOUT ME</h1> <br>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,42 +93,44 @@
     <main>
         <article id="about">
             <section id="myself">
-                <h2>About Myself</h2>
+                <h2 style="text-align: center;">About Myself</h2>
 
                 <figure>
-                    <img src="me.jpg" height="200">
+                    <img src="me.jpg">
                     <figcaption style="font-weight: bold;">Eto ako pogi lang ehe</figcaption>
-                    <p>Hi! My name is Benedict. I'm 19 years old and currently residing at Brgy. 7 BayView Hill, Nasipit, Agusan del Norte.</p>
+                    <p>Hi! My name is Benedict. I'm 19 years old, currently residing at Brgy. 7 BayView Hill, Nasipit, Agusan del Norte, and studying BSIT at Saint Michael College of Caraga. 😊</p>
                 </figure>
-           
+            </section>
+        </article>
+
         <hr>
 
         <article id="lifestory">
             <section>
-                <h2>My Childhood Experience</h2>
+                <h2 style="text-align: center;">My Childhood Experience</h2>
 
                 <figure>
-                    <img src="me.jpg" alt="baby" height="200"> 
+                    <img src="childhood life.jpg" alt="baby" height="200"> 
                     <figcaption style="font-weight: bold;">Age 1 to 10</figcaption>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestiae ipsum ab, quo, consequuntur deserunt ducimus quasi officia accusamus neque odio sed iste iusto nobis. Ea numquam tempore sint eos.`</p>
+                    <p>My childhood was filled with laughter, love, and endless adventures. I spent my days playing outside, climbing trees, and playing with friends until the sun set. Evenings were cozy, with family meals and bedtime stories that sparked my imagination. I was happy to be sorrounded by people that I loved. Those simple, happy moments shaped who I am today.</p>
                 </figure>
             </section>
 
             <section>
-                <h2>My Teenage Experience</h2>
+                <h2 style="text-align: center;">My Teenage Experience</h2>
                 <figure>
-                    <img src="me.jpg" alt="teen" height="200">
+                    <img src="teen life.jpg" alt="teen" height="200">
                     <figcaption style="font-weight: bold;">Age 11 to 17</figcaption>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestiae ipsum ab, quo, consequuntur deserunt ducimus quasi officia accusamus neque odio sed iste iusto nobis. Ea numquam tempore sint eos.`</p>
+                    <p>My teenage years were a bit awkward, and I often felt out of place. I wasn’t the most social person, so I stuck to a small group of close friends. They were my comfort during a time when I was figuring out who I was and where I belonged.</p>
                 </figure>
             </section>
 
             <section>
-                <h2>My Adult Experience</h2>
+                <h2 style="text-align: center;">My Adult Experience</h2>
                 <figure>
-                    <img src="me.jpg" alt="young adult" height="200">
+                    <img src="adult life.jpg" alt="young adult" height="200">
                     <figcaption style="font-weight: bold;">Age 18 to Present</figcaption>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestiae ipsum ab, quo, consequuntur deserunt ducimus quasi officia accusamus neque odio sed iste iusto nobis. Ea numquam tempore sint eos.`</p>
+                    <p>In my young adult years, I’ve started to find my footing. I’m slowly learning to fit in more comfortably and understand who I really am. I’m figuring out what I want from life and what direction I want to take. It’s been a journey of self-discovery, and while there’s still a lot to figure out, I feel more confident in my choices and where I’m headed.</p>
                 </figure>
             </section>
         </article>
@@ -69,64 +139,81 @@
 
         <article id="hobbies">
             <section>
-                <h2>My Hobbies</h2>
-                <p>Reach us out wiht these following contact deatails...</p>
-                <ul>
-                    <li>
-                        Landline: 343-5671
-                    </li>
-                    <li>
-                        Phone Number: 0910345678
-                    </li>
-                    <li>
-                        Email: <a href="mailto:marlon@gmail.com">marlon@gmail.com</a>
-                    </li>
-                </ul>
+                <h2 style="text-align: center;">My Hobbies</h2>
+               
+                <figure>
+                    <img src="videogame.jpg" alt="indoor" height="200">
+                    <figcaption style="font-weight: bold;">Video Games</figcaption>
+                    <p>Since I was a child, I’ve always been drawn to computers. Over time, my interest evolved into a love for video games, which have been a constant source of happiness for me. They’ve allowed me to escape, challenge myself, and explore new worlds.</p>
+                </figure>
+
+                <figure>
+                    <img src="reading.jpg" alt="indoor" height="200">
+                    <figcaption style="font-weight: bold;">Reading Books</figcaption>
+                    <p>Since I wasn’t the most social person, reading became a way for me to escape and explore different worlds. Fantasy books, in particular, caught my interest, offering adventures and stories that let me dive into new realms of imagination and wonder.</p>
+                </figure>
+
+                <figure>
+                    <img src="basketball.jpg" alt="outdoor" height="200">
+                    <figcaption style="font-weight: bold;">Basketball</figcaption>
+                    <p>Basketball was a big part of my life from elementary to high school. I was really passionate about it, playing whenever I could. But as I’ve gotten older, my interest has started to fade, and I find myself focusing on other things.</p>
+                </figure>
             </section>
         </article>
 
         <article id="favorites">
             <section>
-                <h2>Contact Us</h2>
-                <p>Reach us out wiht these following contact deatails...</p>
-                <ul>
-                    <li>
-                        Landline: 343-5671
-                    </li>
-                    <li>
-                        Phone Number: 0910345678
-                    </li>
-                    <li>
-                        Email: <a href="mailto:marlon@gmail.com">marlon@gmail.com</a>
-                    </li>
-                </ul>
+                <h2 style="text-align: center;">My Favorites</h2>
+               
+                <figure>
+                    <img src="siomai.jpg" alt="food" height="200">
+                    <figcaption style="font-weight: bold;">Siomai</figcaption>
+                    <p>My favorite food is siomai. I love spicy foods, and siomai fits perfectly with that. It’s affordable, easy to find, and you can get it anywhere, making it a great street food choice.</p>
+                </figure>
+
+                <figure>
+                    <img src="bruno mars.webp" alt="artist" height="200">
+                    <figcaption style="font-weight: bold;">Bruno Mars</figcaption>
+                    <p>One of my favorite artists is Bruno Mars. His voice is incredible, and I’d love to be able to sing like him someday. His talent is truly out of this world.</p>
+                </figure>
+
+                <figure>
+                    <img src="steins gate.jpg" alt="show" height="200">
+                    <figcaption style="font-weight: bold;">Steins; Gate</figcaption>
+                    <p>
+                        Memory updated
+                        My favorite show is the anime Steins;Gate. It’s a captivating mix of science fiction and emotional depth, and I really enjoy the story and characters.</p>
+                </figure>
+
+                <figure>
+                    <img src="fav person.jpg" alt="person" height="200">
+                    <figcaption style="font-weight: bold;">Favorite Person</figcaption>
+                    <p>My favorite person is my girlfriend, with whom I’ve shared 5 years. We met in high school, and since then, she’s been my closest companion and support. Our relationship has grown through the years, and she’s someone who truly understands me, making every moment with her special.</p>
+                </figure>
+
             </section>
         </article>
 
         <article id="friends">
             <section>
-                <h2>Contact Us</h2>
-                <p>Reach us out wiht these following contact deatails...</p>
-                <ul>
-                    <li>
-                        Landline: 343-5671
-                    </li>
-                    <li>
-                        Phone Number: 0910345678
-                    </li>
-                    <li>
-                        Email: <a href="mailto:marlon@gmail.com">marlon@gmail.com</a>
-                    </li>
-                </ul>
+                <h2 style="text-align: center;">My Friends</h2>
+            
+                <figure>
+                    <img src="friends.jpg" alt="close friends" height="200">
+                    <figcaption style="font-weight: bold;"></figcaption>
+                    <p>These are my friends! They’ve been by my side through thick and thin, and I’m incredibly grateful for their support, laughter, and good times we’ve shared.</p>
+                </figure>
+
             </section>
         </article>
     </main>
 
     <hr>
 
-    <footer style="text-align: center;"">
-        <p  style="font-weight: bold;">All Rights Reserved &copy; MJ Timogan 2024</p>
+    <footer style="text-align: center;">
+        <p style="font-weight: bold;">All Rights Reserved &copy; Benedict Licong</p>
         <a href="#top" style="text-align: center;">Back to Top</a>
     </footer>
-</body>
-</html>
+
+
+        
